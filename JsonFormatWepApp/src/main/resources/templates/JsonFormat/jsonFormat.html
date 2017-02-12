@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>JSON整形</title>
+	<link href="../js/yui_2.5.2/build/logger/assets/logger.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+body {
+	font-family: Verdana;
+	font-size: 90%;
+	padding: 10px;
+}
+h1 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #333333;
+	text-decoration: underline;
+	margin: 0.5em 0.2em;
+}
+
+p#explanation {
+	width: 90%;
+	margin: 1em auto;
+	padding: 0.5em;
+	border: 1px solid #006600;
+	background-color: #F0FFF0;
+	color: #006600;
+}
+
+form {
+	text-align: center;
+}
+
+textarea {
+	width: 90%;
+	height: 10em;
+	margin: 1em auto;
+	text-align: left;
+	font-size: 85%;
+}
+
+input#action-button {
+	text-align: center;
+	padding: 0.2em 4em;
+}
+
+pre#code {
+/*	white-space: pre;*/
+	border: 1px solid #ccc;
+	background-color: #f0f0f0;
+	width: 90%;
+	margin: 1em auto;
+	padding: 0.5em;
+	text-align: left;
+	font-family: mono, monospace;
+}
+	</style>
+	<!-- <script language="JavaScript" type="text/javascript" src="../js/yui_2.5.2/build/yahoo-dom-event/yahoo-dom-event.js"></script> -->
+	<script language="JavaScript" type="text/javascript" src="../js/yui_2.5.2/build/logger/logger-min.js"></script>
+	<script type="text/javascript" src="http://yui.yahooapis.com/2.5.2/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+</head>
+<body>
+	<h1>JSON整形</h1>
+
+	<p id="explanation">
+		JSON形式の文字列を貼り付けて実行すると整形した結果が表示されます。
+	</p>
+
+	<form name="sample" method="post" action="json_formatter.html">
+		<textarea rows="10" cols="60" id="contents"></textarea>
+
+		<input type="button" id="action-button" value="整形" />
+
+		<pre id="code">（ここに結果が表示されます）</pre>
+	</form>
+</body>
+</html>
